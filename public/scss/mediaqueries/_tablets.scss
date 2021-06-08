@@ -1,0 +1,243 @@
+// Tablets and under
+@media screen and (min-width: 865px) and (max-width: 975px) {
+  body {
+    .showcase {
+      #showcase-title {
+        h1 {
+          font-size: 4em;
+        }
+      }
+
+      #slogan {
+        bottom: -18em;
+      }
+    }
+    .container {
+      #navbar {
+        display: none;
+      }
+    }
+
+    // Contact Page
+    #form-section {
+      .business-info {
+        margin-left: 0em;
+      }
+    }
+
+    // Standard Footer
+    .footer-container {
+      #slogan-footer {
+        top: 2em;
+        right: -0.5em;
+        span {
+          font-size: 0.75em;
+          justify-content: space-evenly;
+          margin: 0 0.75em;
+        }
+      }
+      img {
+        width: 200px;
+        height: auto;
+        position: relative;
+        top: 6em;
+        right: 0.25em;
+      }
+
+      .socials-container {
+        position: relative;
+        width: 25%;
+        right: -20em;
+        top: -2em;
+
+        a {
+          font-size: 1em;
+          position: relative;
+        }
+
+        a:hover {
+          color: $color-two;
+          transition: 0.3s ease 0s;
+        }
+
+        div {
+          margin: 0.5em 0;
+        }
+
+        i {
+          font-size: 1.5em;
+        }
+      }
+
+      .legal-terms {
+        #copyright-text {
+          font-size: 0.75em;
+          bottom: -1.6em;
+          left: 1em;
+        }
+      }
+
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+        border: none;
+        font-family: $roboto;
+        font-weight: 400;
+        color: $light-color;
+        transition: 0.3s ease-out 0s;
+      }
+
+      a:hover {
+        color: $color-two;
+        transition: 0.3s ease 0s;
+      }
+
+      .footer-book-btn {
+        #book-btn-2 {
+          font-family: $playfair;
+          top: -7em;
+          left: -15em;
+        }
+      }
+
+      #slogan-footer {
+        position: relative;
+        top: 2em;
+        span {
+          font-size: 1.25em;
+          margin: 0 2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 865px) {
+  .showcase {
+    #showcase-title {
+      h1 {
+        font-size: 3.75em;
+      }
+    }
+
+    #slogan {
+      bottom: -18em;
+    }
+  }
+
+  // Standard Footer
+  .footer-container {
+    height: 400px;
+    outline: 1.5px solid $dark-grey;
+    outline-offset: -0.75em;
+    #slogan-footer {
+      top: 2em;
+      right: -0.5em;
+      span {
+        font-size: 0.75em;
+        justify-content: space-evenly;
+        margin: 0 0.75em;
+      }
+    }
+    img {
+      width: 175px;
+      top: 6em;
+      right: 0.25em;
+    }
+
+    .socials-container {
+      position: relative;
+      width: 25%;
+      right: -16em;
+      top: -2em;
+
+      a {
+        font-size: 1em;
+        position: relative;
+      }
+
+      a:hover {
+        color: $color-two;
+        transition: 0.3s ease 0s;
+      }
+
+      div {
+        margin: 0.5em 0;
+      }
+
+      i {
+        font-size: 1.5em;
+      }
+    }
+
+    .legal-terms {
+      justify-content: space-between;
+      margin: 0 -1em;
+      #copyright-text {
+        font-size: 0.9em;
+        bottom: -1.5em;
+        left: 1em;
+      }
+
+      #privacy-link {
+        font-size: 0.9em;
+        bottom: -1.4em;
+      }
+      #terms-link {
+        font-size: 0.9em;
+        bottom: -1.4em;
+      }
+    }
+
+    .footer-book-btn {
+      #book-btn-2 {
+        top: -8em;
+        left: -13em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  body {
+    .showcase {
+      #showcase-title {
+        h1 {
+          font-size: 3.25em;
+        }
+      }
+    }
+
+    .grid {
+      .cell {
+        height: 750px;
+
+        h3 {
+          position: relative;
+          top: -1.5em;
+        }
+
+        .cell-text {
+          position: relative;
+          top: -3em;
+          width: 60%;
+        }
+
+        #text-3 {
+          position: relative;
+          top: -4em;
+        }
+      }
+    }
+
+    // Therapies Page
+    .therapies-info {
+      height: 600px;
+
+      p {
+        width: 80%;
+      }
+    }
+  }
+}

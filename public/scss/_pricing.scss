@@ -1,0 +1,22 @@
+.price-options {
+  margin: 1.5em 0 1.5em 0;
+
+  span {
+    font-family: $roboto;
+    font-size: 1.25em;
+  }
+
+  .line {
+    display: inline-block;
+    width: 225px;
+    text-align: center;
+    margin: 0 1em 0 1em;
+    position: relative;
+    top: -0.25em;
+  }
+
+  .straight {
+    margin-bottom: 0.5em;
+    margin: 1.25em 0 1.25em 0;
+  }
+}

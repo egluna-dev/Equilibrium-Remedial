@@ -1,0 +1,83 @@
+.therapies-info {
+  background-color: $color-one;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  outline: 1.5px solid $dark-grey;
+  outline-offset: -1em;
+
+  h2 {
+    font-family: $playfair;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-decoration: 3px solid $dark-grey underline;
+    text-underline-offset: 12px;
+    margin-top: -1em;
+    margin-bottom: -1em;
+  }
+
+  p {
+    max-width: 80%;
+    text-align: center;
+    line-height: 2;
+    font-family: $roboto;
+    font-size: 1.1em;
+    margin-top: 0.5em;
+  }
+}
+
+.book-pricing-btns {
+  margin-top: 3em;
+
+  #pricing-btn {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+  }
+}
+
+.book-price-btn {
+  font-family: $playfair;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: $light-color;
+  border: none;
+  text-decoration: none;
+  margin: auto 1.4em;
+  padding: 0.5em 0.5em;
+  position: relative;
+  top: -0.5em;
+  outline: none;
+  cursor: pointer;
+
+  // Color transition on hover off
+  transition: 0.3s ease-out 0s;
+}
+
+.book-price-btn:hover {
+  transition: 0.3s ease 0s;
+  background-color: $dark-grey;
+  transform: scale(0.98);
+  color: $light-color;
+}
+
+.color-one {
+  background-color: $color-one;
+}
+
+.color-two {
+  background-color: $color-two;
+}
+
+.color-three {
+  background-color: $color-three;
+}
+
+.color-four {
+  background-color: $color-four;
+}
+
+.light-grey {
+  background-color: $light-grey;
+}

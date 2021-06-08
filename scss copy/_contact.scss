@@ -1,0 +1,90 @@
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  position: relative;
+  top: -5em;
+}
+
+.business-info {
+  position: relative;
+  top: -4em;
+  margin-left: 5em;
+
+  #business-logo {
+    width: 300px;
+    margin-bottom: 2em;
+    top: -4em;
+  }
+
+  p {
+    margin: 1em 0 1em 0;
+    font-family: $roboto;
+    font-size: 1.25em;
+    text-align: left;
+  }
+}
+
+.form-container {
+  font-size: 1em;
+  text-align: left;
+  margin-top: 10em;
+  margin-right: 5em;
+
+  p {
+    text-align: left;
+    margin-bottom: 1em;
+  }
+
+  label {
+    font-family: $playfair;
+    font-size: 1.2em;
+  }
+
+  input[type='text'] {
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px;
+    margin: 8px;
+    height: 2em;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+  }
+
+  input[type='submit'] {
+    font-family: $playfair;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: $color-two;
+    color: $light-color;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+
+    // Color transition on hover off
+    transition: 0.3s ease-out 0s;
+  }
+
+  input[type='submit']:hover {
+    background-color: $color-one;
+  }
+}
+
+#form-message {
+  input {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+#form-section {
+  height: 900px;
+}
