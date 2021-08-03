@@ -1,3 +1,10 @@
-.terms-content {
-  width: 300px;
+#privacy-terms {
+  display: flex;
+  justify-content: flex-start;
+  height: 600px;
+
+  p {
+    position: relative;
+    top: 50px;
+  }
 }

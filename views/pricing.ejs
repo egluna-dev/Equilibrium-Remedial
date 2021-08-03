@@ -6,7 +6,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='stylesheet' href='css/style.min.css'>
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" type='image/jpg' href="public/logo-jpg/Logo_Reduced.svg">
     <!-- Font Awesome Icons -->
     <script src='https://use.fontawesome.com/9dc279d470.js'></script>
     <link 
@@ -20,67 +21,66 @@
   </head>
   <body>
     <!-- Showcase | Intro Section and Navbar -->
-    <div class='showcase about' id='therapies-showcase'>
-      <div class="container flex">
-        <a href='/'><img id='logo' src='logo-jpg/ERLogo.png' alt='Equilibrium Remedial'></a>
-
-        <div id='showcase-title'>
-            <h1>Pricing</h1>
-        </div>
-
-        <nav id='navbar'
-          <ul style='list-style-type: none' id='navlinks'>
-              <li><a class='navbar-link' href='/'>Home</a></li>
-              <li><a class='navbar-link' href='about'>About</a></li>
-              <li><a class='navbar-link' href='therapies'>Therapies</a></li>
-              <li><a class='navbar-link' style='border-bottom: 5px solid #9b4d67' href='pricing'>Pricing</a></li>
-              <li><a class='navbar-link' href='contact'>Contact</a></li>
-          </ul>
-          <button class='book-btn' id='book-btn-1'>Book Now</button>
-        </nav>
-        
-        <!-- // Hamburger Menu Overlay for Tablet and Mobile -->
-        <div class='menu-btn'>
-          <div class='menu-btn-burger'>
-          </div>
-          <div class='menu'>
-            <div>
+    <div class='page-showcase' id='therapies-showcase'>
+      <div class='page-showcase-container' id='therapies-container'>
+        <div id='about-showcase-top'>
+          <a id='main-logo-link' href='/'>
+            <img id='main-logo' src='logo-jpg/ERLogo.png' alt='Equilibrium Remedial'>
+          </a>
+          <!-- // Regular Navbar -->
+          <nav id='navbar'
+            <ul style='list-style-type: none' id='navlinks'>
+                <li><a class='navbar-link' href='/'>Home</a></li>
+                <li><a class='navbar-link' href='about'>About</a></li>
+                <li><a class='navbar-link' href='therapies'>Therapies</a></li>
+                <li><a class='navbar-link' href='pricing' style='border-bottom: 5px solid #9b4d67'>Pricing</a></li>
+                <li><a class='navbar-link' href='contact'>Contact</a></li>
+                <li><button id='book-btn-1'><a style='text-decoration: none; border: none' href='contact'>Book Now</a></button></li>
+            </ul>
+          </nav>
+          <div class='menu-btn'>
+            <div class='menu-btn-burger'>
+            </div>
+            <div class='menu'>
               <div>
-                <ul>
-                  <img id='logo-overlay' src='logo-jpg/ERLogo.png' alt='Equilibrium Remedial'>
-                  <li><a href='/'>Home</a></li>
-                  <li><a href='about'>About</a></li>
-                  <li><a href='therapies'>Therapies</a></li>
-                  <li><a href='pricing' style='border-bottom: 5px solid #9b4d67'>Pricing</a></li>
-                  <li><a href='contact'>Contact</a></li>
-                  <li><a href='contact'><button class='book-btn-overlay'>Book Now</button></a></li>
-                </ul>
+                <div>
+                  <ul>
+                    <img id='logo-overlay' src='logo-jpg/ERLogo.png' alt='Equilibrium Remedial'>
+                    <li><a href='/' style='border-bottom: none'>Home</a></li>
+                    <li><a href='about'>About</a></li>
+                    <li><a href='therapies'>Therapies</a></li>
+                    <li><a href='pricing' style='border-bottom: 5px solid #9b4d67'>Pricing</a></li>
+                    <li><a href='contact'>Contact</a></li>
+                    <li><a href='contact'><button class='book-btn-overlay'>Book Now</button></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div id='about-title'>
+          <h1>Pricing</h1>
+        </div>
       </div>
     </div>
 
-          <!-- Pricing Page Information-  -->
-    <div id='therapies-pricing-info' class='therapies-info'>
+    <!-- Therapies Page Information-  -->
+    <div class='page-info-container green'>
       <h2>Subheading</h2>
       <p>Aden was born right after the moon landing. Look at him go.
         We are a premium mobile and sports therapy service,
-        focused on pain relief, increased mobility and relaxation.
-        A fully customised massage that meets your needs.
-        Nunc shizzle my nizzle crocodizzle fo shizzle, pulvinizzle cool, condimentizzle eget, vehicula id, dizzle. 
-        Fizzle pot pot a shiznit hendrerizzle mattizzle. 
-        Pellentesque i'm in the shizzle magna gangster i saw beyonces tizzles and my pizzle went crizzle commodo bizzle. Fizzle lobortizzle fermentum gizzle. Morbi hizzle. Maecenas quizzle gizzle cool crunk auctor. Integizzle break yo neck, yall viverra shiz. Curabitizzle sollicitudizzle fizzle purizzle. Morbi venenatis ma nizzle dang doggy shiznit. Nizzle sheezy enim vitae . Cizzle fo fizzle penatibizzle izzle mofo go to hizzle shizznit we gonna chung, fizzle ridiculus stuff.
+        focused on pain relief, increased mobility and relaxation. Whether it's a deep relaxation massage in complete bliss,
+        or a deep stretch to undo the damages of everyday living,
+        we have you covered!
       </p>
     </div>
 
     <!-- Therapies Pricing Section-->
-    <div class='grid container'>
+    <div class='grid' id='pricing-grid'>
       <!-- Remedial Massage -->
-      <div id='remedial-massage' class='cell cell-1 color-two therapy-pricing'>
-        <h3>Remedial Massage</h3>
-        <div class='cell-text' id='text-1'>
+      <div id='remedial-massage' class='cell red'>
+        <h3 style='z-index: 1;'>Remedial Massage</h3>
+        <div class='cell-content' id='text-1'>
           <p>We are a premium mobile and sports therapy service,
             focused on pain relief, increased mobility and relaxation.
             A fully customised massage that meets your needs.
@@ -98,15 +98,15 @@
           </div>
 
           <div class='book-pricing-btns'>
-            <a href='contact'><button class='book-price-btn'>Book Now</button></a>
+            <a class='book-price-btn' href='contact'>Book Now</a>
           </div>
         </div>
       </div>
 
       <!-- Hotstone Massage -->
-      <div id='hotstone-massage' class='cell cell-1 color-three therapy-pricing'>
-        <h3>Hotstone Massage</h3>
-        <div class='cell-text' id='text-1'>
+      <div id='hotstone-massage' class='cell blue'>
+        <h3 style='z-index: 1;'>Hotstone Massage</h3>
+        <div class='cell-content' id='text-1'>
           <p>We are a premium mobile and sports therapy service,
             focused on pain relief, increased mobility and relaxation.
             A fully customised massage that meets your needs.
@@ -124,15 +124,15 @@
           </div>
 
           <div class='book-pricing-btns'>
-            <a href='contact'><button class='book-price-btn'>Book Now</button></a>
+            <a class='book-price-btn' href='contact'>Book Now</a>
           </div>
         </div>
       </div>
 
       <!-- Deep Tissue Massage -->
-      <div id='deeptissue-massage' class='cell cell-1 light-grey therapy-pricing'>
-        <h3>Deep Tissue Massage</h3>
-        <div class='cell-text' id='text-1'>
+      <div id='deeptissue-massage' class='cell grey'>
+        <h3 style='z-index: 1;'>Deep Tissue Massage</h3>
+        <div class='cell-content' id='text-1'>
           <p>We are a premium mobile and sports therapy service,
             focused on pain relief, increased mobility and relaxation.
             A fully customised massage that meets your needs.
@@ -150,15 +150,15 @@
           </div>
 
           <div class='book-pricing-btns'>
-            <a href='contact'><button class='book-price-btn'>Book Now</button></a>
+            <a class='book-price-btn' style='border: 1px solid #9b4d67' href='contact'>Book Now</a>
           </div>
         </div>
       </div>
 
       <!-- Pregnancy Massage -->
-      <div id='pregnancy-massage' class='cell cell-1 color-one therapy-pricing'>
-        <h3>Pregnancy Massage</h3>
-        <div class='cell-text' id='text-1'>
+      <div id='pregnancy-massage' class='cell green'>
+        <h3 style='z-index: 1;'>Pregnancy Massage</h3>
+        <div class='cell-content' id='text-1'>
           <p>We are a premium mobile and sports therapy service,
             focused on pain relief, increased mobility and relaxation.
             A fully customised massage that meets your needs.
@@ -176,15 +176,15 @@
           </div>
 
           <div class='book-pricing-btns'>
-            <a href='contact'><button class='book-price-btn'>Book Now</button></a>
+            <a class='book-price-btn' href='contact'>Book Now</a>
           </div>
         </div>
       </div>
 
-      <!-- Nose Massage -->
-      <div id='nose-massage' class='cell cell-1 color-one therapy-pricing'>
-        <h3>Nose Massage</h3>
-        <div class='cell-text' id='text-1'>
+      <!-- Sports Massage -->
+      <div id='nose-massage' class='cell red'>
+        <h3 style='z-index: 1;'>Sports Massage</h3>
+        <div class='cell-content' id='text-1'>
           <p>We are a premium mobile and sports therapy service,
             focused on pain relief, increased mobility and relaxation.
             A fully customised massage that meets your needs.
@@ -202,15 +202,15 @@
           </div>
 
           <div class='book-pricing-btns'>
-            <a href='contact'><button class='book-price-btn'>Book Now</button></a>
+            <a class='book-price-btn' href='contact'>Book Now</a>
           </div>
         </div>
       </div>
 
       <!-- Soft Tissue Massage -->
-      <div id='softtissue-massage' class='cell cell-1 light-grey therapy-pricing'>
-        <h3>Soft Tissue Massage</h3>
-        <div class='cell-text' id='text-1'>
+      <div id='softtissue-massage' class='cell blue'>
+        <h3 style='z-index: 1;'>Soft Tissue Massage</h3>
+        <div class='cell-content' id='text-1'>
           <p>We are a premium mobile and sports therapy service,
             focused on pain relief, increased mobility and relaxation.
             A fully customised massage that meets your needs.
@@ -228,15 +228,15 @@
           </div>
 
           <div class='book-pricing-btns'>
-            <a href='contact'><button class='book-price-btn'>Book Now</button></a>
+            <a class='book-price-btn' href='contact'>Book Now</a>
           </div>
         </div>
       </div>
 
-      <!-- Foot Massage -->
-      <div id='foot-massage' class='cell cell-1 color-three therapy-pricing'>
-        <h3>Foot Massage</h3>
-        <div class='cell-text' id='text-1'>
+      <!-- Myotherapy Massage -->
+      <div id='foot-massage' class='cell blue'>
+        <h3 style='z-index: 1;'>Myotherapy</h3>
+        <div class='cell-content'>
           <p>We are a premium mobile and sports therapy service,
             focused on pain relief, increased mobility and relaxation.
             A fully customised massage that meets your needs.
@@ -254,15 +254,15 @@
           </div>
 
           <div class='book-pricing-btns'>
-            <a href='contact'><button class='book-price-btn'>Book Now</button></a>
+            <a class='book-price-btn' href='contact'>Book Now</a>
           </div>
         </div>
       </div>
 
-      <!-- Ear  Massage -->
-      <div id='ear-massage' class='cell cell-1 color-two therapy-pricing'>
-        <h3>Ear Massage</h3>
-        <div class='cell-text' id='text-1'>
+      <!-- Relaxation  Massage -->
+      <div id='ear-massage' class='cell grey'>
+        <h3 style='z-index: 1;'>Relaxation Massage</h3>
+        <div class='cell-content'>
           <p>We are a premium mobile and sports therapy service,
             focused on pain relief, increased mobility and relaxation.
             A fully customised massage that meets your needs.
@@ -280,45 +280,52 @@
           </div>
 
           <div class='book-pricing-btns'>
-            <a href='contact'><button class='book-price-btn'>Book Now</button></a>
+            <a class='book-price-btn' style='border: 1px solid #9b4d67' href='contact'>Book Now</a>
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- Footer -->
+    <div id='footer-container'>
+      <div id='slogan-footer'>
+        <span>Repair</span><span>Relax</span><span>Rebalance</span>
+      </div>
 
-      <div class='footer-container'>
-        <div class='footer'>
-          <div id='slogan-footer'>
-            <h2><span>Repair</span><span>Relax</span><span>Rebalance</span></h2>
+      <div id='middle-container-footer'>
+        <div class='book-btn'>
+          <button id='book-btn-footer'><a href='contact' style='font-family: Playfair Display;'>Book Now</a></button>
+        </div>
+
+        <a href='/'><img id='logo-footer' src='logo-jpg/ERLogo.png' alt='Equilibrium Remedial'></a>
+
+        <div id='social-links-container'>
+          <a id='truelocal-link' href='https://www.truelocal.com.au/' target='_blank'>True Local</a>
+          <div ><a id='google-reviews-link' href='https://google.com.au'>Google Reviews</a></div>
+          <div id='social-icons'>
+            <a href='#'><i class='fab fa-twitter'></i></a>
+            <a href='#'><i class='fab fa-facebook'></i></a>
+            <a href='#'><i class='fab fa-instagram'></i></a>
+            <a href='#'><i class='fab fa-youtube'></i></a>
+            <a href='#'><i class='far fa-envelope'></i></a>
           </div>
-          <a href='pricing'><img id='logo-footer' src='logo-jpg/ERLogo.png' alt='Equilibrium Remedial'></a>
-
-          <div class='socials-container'>
-            <div id='true-local'><a href='https://www.truelocal.com.au/' target='_blank'>True Local</a></div>
-            <div id='google-reviews'><a href='https://google.ca' target='_blank'>Google Reviews</a></div>
-            <div class='social-links'>
-              <a href='#'><i class='fab fa-twitter'></i></a>
-              <a href='#'><i class='fab fa-facebook'></i></a>
-              <a href='#'><i class='fab fa-instagram'></i></a>
-              <a href='#'><i class='fab fa-youtube'></i></a>
-              <a href='#'><i class='far fa-envelope'></i></a>
-            </div>
-            <div id='phone-number'>
-              <a href='#'><i id='phone' class='fas fa-mobile'></i><span>9837498734</span></a>
-            </div>
-          </div>
-
-          <div class='footer-book-btn'>
-            <button class='book-btn' id='book-btn-2'><a href='contact'>Book Now</a></button>
-          </div>
-
-          <div class='legal-terms'>
-            <p><a class ='underline' id='privacy-link' href='privacy'>Privacy Policy</a></p>
-            <p class ='underline' id='copyright-text'> Copyright 2021 &copy; Equilibrium Remedial</p>
-            <p><a class ='underline' id='terms-link' href='privacy'>Terms &amp; Conditions</a></p>
+          <div id='phone-container'>
+            <a id='phone-number' href='#'><i id='phone' class='fas fa-mobile'></i><span>9837498734</span></a>
           </div>
         </div>
       </div>
+      
+      <div id='bottom-container-footer'>
+        <a class ='underline' id='privacy-link' href ='privacy'>Privacy Policy</a>
+        <p class ='underline' id='copyright-text'> Copyright 2021 &copy; Equilibrium Remedial</p>
+        <a class ='underline' id='terms-link' href='terms'>Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class='cell red' id='designed-by'>
+      <p>Designed and built by EGL Media 2021 &copy;</p>
+      <a href='#'>
+        <img src='logo-jpg/EGLMediaWhite.svg' alt='EGLMedia'>
+      </a>
     </div>
 
     
@@ -328,9 +335,10 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src='javascript/main.js'></script>
   </body>
 </html>

@@ -12,10 +12,6 @@ router.get('/', (req, res) => {
 // @route   POST /contact
 // @desc    Send form data to email
 // @access  Public
-app.post('/contact', (req, res) => {
-    // TODO:
-    // Send email here
-    res.json({ message: 'Message received!'})
-});
+
 
 module.exports = router;

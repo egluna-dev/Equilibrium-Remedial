@@ -1,171 +1,189 @@
-.footer-container {
+#footer-container {
+  background-color: $green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
   width: 100%;
-  height: 1fr;
-  background-color: $color-one;
+  height: 450px;
   outline: 1.5px solid $dark-grey;
-  outline-offset: -1em;
-  overflow: visible;
+  outline-offset: -0.75em;
 
   #slogan-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: center;
     position: relative;
-    top: 2em;
+    bottom: 25px;
+
     span {
-      font-weight: 100;
-      font-size: 1.25em;
+      font-family: $playfair;
+      color: $light-color;
+      font-size: 1.25rem;
       text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3);
-      justify-content: space-evenly;
-      margin: 0 2em;
     }
   }
 
-  img {
-    width: 215px;
-    height: auto;
-    position: relative;
-    top: 7em;
-    right: 1.5em;
-    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  .footer {
+  #middle-container-footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-  }
-
-  .legal-terms {
-    position: relative;
-    bottom: 3em;
-    margin: 0;
-  }
-}
-
-.social-links {
-  a {
-    margin: 0 0.2em 0 0.2em;
-  }
-}
-
-.socials-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 300px;
-  flex-wrap: wrap;
-  margin-right: 0 5em;
-  font-family: $roboto;
-  position: relative;
-  right: -30em;
-  top: -4em;
-  text-align: center;
-
-  a {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 500;
-    justify-content: center;
-    position: relative;
-    color: $light-color;
-    transition: 0.3s ease-out 0s;
-    border-bottom: 1px solid $light-grey;
-  }
-
-  a:hover {
-    color: $color-two;
-    transition: 0.3s ease 0s;
-  }
-
-  i {
-    font-size: 36px;
-    margin: 5px 5px;
-    text-decoration: none;
-  }
-
-  div {
-    margin: 0.7em 0 0.7em 0;
-  }
-
-  #true-local {
-    text-decoration: 1px underline;
-    text-underline-offset: 5px;
-  }
-  #google-reviews {
-    text-decoration: 1px underline;
-    text-underline-offset: 5px;
-  }
-
-  #phone {
-    margin-right: 0.5em;
-  }
-
-  #phone-number {
-    display: flex;
-    justify-content: center;
-    text-decoration: 1px underline;
-    text-underline-offset: 5px;
-    align-self: center;
-
-    span {
+    img {
       position: relative;
-      bottom: 10px;
+      bottom: 25px;
+      width: 200px;
+      align-self: center;
+      justify-self: center;
+      margin: 30px 0;
+      text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #social-links-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: 0rem;
+      bottom: 1rem;
+
+      a {
+        color: $light-color;
+        font-family: $roboto;
+        font-weight: 100;
+        font-size: 1rem;
+        margin: 15px 0;
+        text-decoration: underline 1px $light-color;
+        text-underline-offset: 4px;
+
+        // Color transition on hover off
+        transition: 0.3s ease-out 0s;
+      }
+
+      a:hover {
+        color: $red;
+      }
+
+      i {
+        color: $light-color;
+        font-size: 1.5rem;
+        margin: 8px 5px 0 5px;
+        padding-top: 10px;
+      }
+
+      i:hover {
+        color: $red;
+
+        // Color transition on hover off
+        transition: 0.3s ease-out 0s;
+      }
+
+      #phone-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-top: -10px;
+        #phone-number {
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    #book-btn-footer {
+      display: none;
+      font-family: $playfair;
+      font-size: 1.25rem;
+      border-radius: 10px;
+      background-color: $red;
+      border: none;
+      text-decoration: none;
+      padding: 8px 10px;
+      // margin-left: 1rem;
+      outline: none;
+      cursor: pointer;
+
+      // Color transition on hover off
+      transition: 0.3s ease-out 0s;
+
+      a {
+        text-decoration: none;
+        color: $light-color;
+      }
+    }
+
+    #book-btn-footer:hover {
+      background-color: button-background($green);
+      transition: 0.3s ease 0s;
+
+      transform: scale(0.98);
+    }
+  }
+
+  #bottom-container-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: -25px;
+
+    p {
+      font-weight: 100;
+    }
+
+    #copyright-text {
+      font-size: 0.8rem;
+      text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #privacy-link {
+      display: none;
+    }
+
+    #terms-link {
+      display: none;
+    }
+
+    a {
+      font-weight: 100;
+      font-family: $roboto;
+      text-decoration: none;
+      color: $light-color;
+      // text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3);
+      // Color transition on hover off
+      transition: 0.3s ease-out 0s;
+    }
+
+    a:hover {
+      color: $red;
+      transition: 0.3s ease 0s;
     }
   }
 }
 
-#book-btn-2 {
-  font-size: 1.25em;
-  position: relative;
-  top: -9.5em;
-  left: -25em;
-}
-
-#book-btn-2:hover {
-  background-color: button-background($color-one);
-  transition: 0.3s ease 0s;
-  color: $light-color;
-  outline: none;
-  transform: scale(0.98);
-}
-
-#copyright-text {
-  font-family: $roboto;
-}
-
-.legal-terms {
+#designed-by {
+  height: 50px;
   display: flex;
-  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  outline: 1.5px solid $dark-grey;
+  outline-offset: -0.4em;
 
-  #copyright-text {
+  p {
+    font-size: 0.8rem;
     position: relative;
-    bottom: -1em;
-    left: 1em;
+    right: 1rem;
   }
-
-  #privacy-link {
+  img {
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5rem;
     position: relative;
-    bottom: -1em;
-    left: -3em;
-  }
-
-  #terms-link {
-    position: relative;
-    bottom: -1em;
-    right: -5em;
-  }
-
-  a:link,
-  a:visited,
-  a:active {
-    text-decoration: none;
-    border: none;
-    font-family: $roboto;
-    font-weight: 400;
-    color: $light-color;
-    transition: 0.3s ease-out 0s;
-  }
-
-  a:hover {
-    color: $color-two;
-    transition: 0.3s ease 0s;
+    right: 1rem;
   }
 }

@@ -1,83 +1,57 @@
-.therapies-info {
-  background-color: $color-one;
-  width: 100%;
-  height: 500px;
+#therapies-grid {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  outline: 1.5px solid $dark-grey;
-  outline-offset: -1em;
 
-  h2 {
-    font-family: $playfair;
-    font-size: 2.5em;
-    font-weight: normal;
-    text-decoration: 3px solid $dark-grey underline;
-    text-underline-offset: 12px;
-    margin-top: -1em;
-    margin-bottom: -1em;
+  .cell-image {
+    height: 575px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
-  p {
-    max-width: 80%;
-    text-align: center;
-    line-height: 2;
-    font-family: $roboto;
-    font-size: 1.1em;
-    margin-top: 0.5em;
+  .cell {
+    height: 700px;
+    h3 {
+      font-family: $playfair;
+      font-size: 1.563rem;
+      font-weight: 300;
+      color: $light-color;
+      text-decoration: underline 3px $dark-grey;
+      text-underline-offset: 8px;
+      text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3);
+      position: relative;
+      margin-bottom: 1rem;
+    }
   }
 }
 
 .book-pricing-btns {
-  margin-top: 3em;
+  display: flex;
+  margin-top: 1rem;
+  .book-price-btn {
+    font-family: $playfair;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    background-color: $light-grey;
+    color: $light-color;
+    border: none;
+    text-decoration: none;
+    padding: 8px 10px;
+    outline: none;
+    cursor: pointer;
+    margin: 2rem 1rem;
 
-  #pricing-btn {
-    padding: 0.5em 1.5em 0.5em 1.5em;
+    // Color transition on hover off
+    transition: 0.3s ease-out 0s;
   }
-}
 
-.book-price-btn {
-  font-family: $playfair;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  background-color: $light-color;
-  border: none;
-  text-decoration: none;
-  margin: auto 1.4em;
-  padding: 0.5em 0.5em;
-  position: relative;
-  top: -0.5em;
-  outline: none;
-  cursor: pointer;
-
-  // Color transition on hover off
-  transition: 0.3s ease-out 0s;
-}
-
-.book-price-btn:hover {
-  transition: 0.3s ease 0s;
-  background-color: $dark-grey;
-  transform: scale(0.98);
-  color: $light-color;
-}
-
-.color-one {
-  background-color: $color-one;
-}
-
-.color-two {
-  background-color: $color-two;
-}
-
-.color-three {
-  background-color: $color-three;
-}
-
-.color-four {
-  background-color: $color-four;
-}
-
-.light-grey {
-  background-color: $light-grey;
+  .book-price-btn:hover {
+    background-color: $dark-grey;
+    transition: 0.3s ease 0s;
+    cursor: pointer;
+    transform: scale(0.98);
+  }
 }

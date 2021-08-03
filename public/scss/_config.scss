@@ -1,23 +1,26 @@
 // Colors
 $light-color: white;
-$color-one: #659390;
-$color-two: #9b4d67;
-$color-three: #7f8695;
-$color-four: #868d9f;
+$green: #659390;
+$red: #9b4d67;
+$blue: #7f8695;
+$light-blue: #868d9f;
 $light-grey: #999;
 $dark-grey: #707070;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 $playfair: 'Playfair Display', serif;
 $alisha: 'Alisha', sans-serif;
+
+$montserrat: 'Montserrat', sans-serif;
 $roboto: 'Roboto', sans-serif;
 
 // Functions
 @function button-background($bg-color) {
-  @if ($bg-color == $color-one) {
-    @return $color-three;
+  @if ($bg-color == $green) {
+    @return $blue;
   } @else {
-    @return $color-one;
+    @return $green;
   }
 }
