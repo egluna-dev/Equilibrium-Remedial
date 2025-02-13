@@ -110,7 +110,5 @@ app.post('/send', (req, res) => {
     res.render('contact', {msg: 'Email has been sent'});
 });
 
-// This is a new comment
-
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
